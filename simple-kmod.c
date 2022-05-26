@@ -9,7 +9,7 @@ MODULE_VERSION(KMODVER);
 
 int init_module(void)
 {
-    printk(KERN_INFO "Hello world from simple_kmod.\n");
+    printk(KERN_INFO "Hello world from Marvell simple_kmod.\n");
 
     /* 
      * A non 0 return means init_module failed; module can't be loaded. 
@@ -19,5 +19,5 @@ int init_module(void)
 
 void cleanup_module(void)
 {
-    printk(KERN_INFO "Goodbye world from simple_kmod.\n");
+    printk(KERN_INFO "Goodbye world from Marvell simple_kmod.\n");
 }
